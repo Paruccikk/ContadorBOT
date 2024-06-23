@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurar Bot</title>
+</head>
+<body>
+  <h1>Configurar Bot</h1>
+  <button id="configureBot">Configurar Bot</button>
+
+  <script>
+    document.getElementById('configureBot').addEventListener('click', async () => {
+      try {
+        const response = await fetch('https://api.telegram.org/bot7225700924:AAFQbefX9Tc2eR4xQxRSU_M-7vmIHb87O/setWebhook?url=https://contador-bot.vercel.app/bot.php');
+        const data = await response.json();
+        console.log(data);
+        alert('Bot configurado com sucesso!');
+      } catch (error) {
+        console.error(error);
+        alert('Erro ao configurar o bot!');
+      }
+    });
+  </script>
+</body>
+</html>
