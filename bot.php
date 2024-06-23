@@ -1,7 +1,7 @@
 <?php
 
 // Token do seu bot
-$botToken = '7225700924:AAFQbefX9Tc2eR4xQxRSU_M-7vmIHb87Ohk';
+$botToken = '7225700924:AAFQbefX9Tc2eR4xQxRSU_M-7vmIHb87O';
 $apiUrl = "https://api.telegram.org/bot$botToken/";
 
 // Função para enviar mensagens
